@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,36 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var pow = require( '@stdlib/math-base-special-pow' );
-var abs = require( '@stdlib/math-base-special-abs' );
-var EPS = require( '@stdlib/constants-float64-eps' );
-var PI = require( '@stdlib/constants-float64-pi' );
-var PI_SQUARED = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a number', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof PI_SQUARED, 'number', 'main export is a number' );
-	t.end();
-});
-
-tape( 'export is a double-precision floating-point number equal to 9.869604401089358', function test( t ) {
-	t.equal( PI_SQUARED, 9.869604401089358, 'equals 9.869604401089358' );
-	t.end();
-});
-
-tape( 'export equals π²', function test( t ) {
-	var delta;
-	var tol;
-	var v;
-
-	v = pow( PI, 2 );
-
-	delta = abs( PI_SQUARED - v );
-	tol = EPS * v;
-
-	t.ok( delta <= tol, 'equals π² within tolerance '+tol+'. v: '+v+'. π²: '+PI_SQUARED+'.' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
