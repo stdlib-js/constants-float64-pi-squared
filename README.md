@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import PI_SQUARED from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-pi-squared@esm/index.mjs';
+import PI_SQUARED from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-pi-squared@v0.2.3-esm/index.mjs';
 ```
 
 #### PI_SQUARED
@@ -72,7 +72,7 @@ var bool = ( PI_SQUARED === 9.869604401089358 );
 <body>
 <script type="module">
 
-import PI_SQUARED from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-pi-squared@esm/index.mjs';
+import PI_SQUARED from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-pi-squared@v0.2.3-esm/index.mjs';
 
 console.log( PI_SQUARED );
 // => 9.869604401089358
